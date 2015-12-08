@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+	<RelativeLayout
+        android:id="@+id/relative_header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/normal_orange_color" >
+
+        <TextView
+            android:id="@+id/text_index_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="@string/title_main_search"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+	<AutoCompleteTextView
+	    android:id="@+id/autoCompleteTextView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:completionThreshold="2"
+	    android:ems="10"
+	    android:text="请输入内容" >
+
+	    <requestFocus />
+	</AutoCompleteTextView>
+
+	<Button
+	    android:id="@+id/autoCompleteTextView_botton"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Button" />
+	
+	
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:id="@+id/relative_header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/normal_orange_color" >
+
+        <TextView
+            android:id="@+id/text_index_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="@string/title_main_tuan"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    
+	<com.handmark.pulltorefresh.library.PullToRefreshListView 
+	    android:id="@+id/pull_to_refresh_listView_tuan_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1">
+	    
+	</com.handmark.pulltorefresh.library.PullToRefreshListView>
+	
+</LinearLayout>

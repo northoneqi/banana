@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg_color" >
+
+    <LinearLayout
+        android:id="@+id/linear_tuan_detail_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/normal_orange_color"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/text_tuan_detail_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tuan_detail_activate_bg"
+            android:drawableLeft="@drawable/icon_city_back"
+            android:gravity="center_vertical"
+            android:text="商品详情"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/ima_tuan_detail_title_share_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/icon_imageview_goods_title_share" />
+
+        <ImageView
+            android:id="@+id/img_tuan_detail_title_favorite_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/icon_imageview_goods_title_selected" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_tuan_detail_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/text_tuan_detail_bottom_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥0.00"
+            android:textColor="#FFFF5A00"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/text_tuan_detail_bottom_old_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="￥0.00"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/imageButton_tuan_detail_bottom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buy_btn_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="即刻购买"
+            android:textColor="#fff000" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_tuan_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linear_tuan_detail_title_bar" >
+
+        <LinearLayout
+            android:id="@+id/linear_tuan_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/img_tuan_detail_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/click_to_big_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/img_tuan_detail_banner"
+                    android:background="#55999999"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="点击查看大图"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

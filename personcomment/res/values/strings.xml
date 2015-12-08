@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">大禹</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="schedule">你是哪位是？？qijing</string>
+    <string name="guide_welcome">点我不一样</string>
+    <string name="btn_main_navigation_index">首页</string>
+    <string name="btn_main_nivigation_tuan">团购</string>
+    <string name="btn_main_nivigation_search">发现</string>
+    <string name="btn_main_nivigation_my">我的</string>
+    <string name="text_index_title">首页</string>
+    <string name="title_main_my">我的</string>
+    <string name="title_main_tuan">团购</string>
+    <string name="title_main_search">发现</string>
+    <string name="index_title_city">选择城市</string>
+    <string name="text_city">选择城市</string>
+    <string name="text_city_location">城市定位中...</string>
+    <string name="text_andcity">所在城市</string>
+
+</resources>
